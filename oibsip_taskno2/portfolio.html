@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <style>
+        #header {
+            background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200731/pngtree-blue-carbon-background-with-sport-style-and-golden-light-image_371487.jpg)
+        }
+
+        #pf {
+            text-shadow: .05em .03em 0 rgb(240, 9, 9);
+            font-size: 100px;
+        }
+
+        #nav {
+            text-shadow: .1em .1em 0 rgb(55, 61, 61);
+        }
+
+        /* #home{
+            text-shadow: .1em .01em 0 hsl(200 50% 30%);
+        } */
+
+        .about {
+            background-color: black;
+            background-size: 150%;
+            background-repeat: no-repeat;
+            display: block;
+        }
+
+        .abtttl {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 35px;
+            color: yellow;
+            text-align: center;
+            padding: 5px;
+            text-shadow: 2px 2px rgb(4, 47, 240);
+        }
+
+        .alu img {
+            height: 360px;
+            width: 320px;
+            position: absolute;
+            align: center;
+            margin: 22px 1100px;
+            padding: 2px 2px;
+            border-radius: 10%;
+            box-shadow: 0.1em 0.1em white;
+            display: inline-block;
+        }
+
+        .abtinfo {
+            color: rgb(255, 251, 251);
+            font-family: 'Times New Roman', Times, serif;
+            text-align: left;
+            padding: 0px 35px 35px 35px;
+            font-size: 25px;
+            margin: 0px 35px 35px 55px;
+            /* margin: 45px; */
+        }
+
+        .Proj {
+            display: block;
+            height: 770px;
+            width: auto;
+            background-image: url("ylw2.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .abttl {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 45px;
+            color: rgb(248, 8, 8);
+            text-align: center;
+            text-shadow: 2px 2px rgb(8, 8, 8);
+            margin: 1px;
+            padding: 1px;
+        }
+
+        .stone img {
+            height: 170px;
+            width: 170px;
+            position: absolute;
+            align: center;
+            margin: 170px 360px;
+            padding: 2px 2px;
+            border-radius: 50%;
+            box-shadow: 0.1em 0.1em white;
+            display: inline-block;
+        }
+
+        .snake img {
+            height: 170px;
+            width: 170px;
+            position: absolute;
+            align: center;
+            margin: 30px 550px;
+            padding: 2px 2px;
+            border-radius: 50%;
+            box-shadow: 0.1em 0.1em white;
+            display: inline-block;
+        }
+
+        .avengers img {
+            height: 170px;
+            width: 170px;
+            position: absolute;
+            align: center;
+            margin: 290px 570px;
+            padding: 2px 2px;
+            border-radius: 50%;
+            box-shadow: 0.1em 0.1em white;
+            display: inline-block;
+        }
+
+        .tac img {
+            height: 170px;
+            width: 170px;
+            position: absolute;
+            align: center;
+            margin: 50px 1270px;
+            padding: 2px 2px;
+            border-radius: 10%;
+            box-shadow: 0.1em 0.1em gray;
+            display: inline-block;
+        }
+
+        .projlist {
+            column-count: 2;
+            margin: 10px 80px;
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .projlist1 {
+            /* margin: 30px 80px; */
+            display: flex;
+        }
+
+        .projlist2 {
+            display: flex;
+            /* margin: 30px 80px; */
+        }
+
+        .footli {
+            list-style: none;
+        }
+
+        .footli li {
+            font-weight: bold;
+            text-decoration: none;
+            color: rgb(46, 8, 133);
+            text-shadow: 2px 2px white;
+        }
+
+        .footli li:hover {
+            text-decoration: underline;
+            font-family: cursive;
+            color: rgb(49, 52, 224);
+            text-shadow: 2px 2px rgb(241, 239, 239);
+        }
+
+        .abtl {
+            font-family: March;
+            font-size: 45px;
+            color: rgb(205, 240, 10);
+            text-align: center;
+            text-shadow: 2px 2px rgb(240, 165, 4);
+            margin: 1px;
+            padding: 1px;
+        }
+
+        .exp {
+            background-image: url("https://www.itl.cat/pngfile/big/118-1187917_accenture-wallpaper-digital-experience.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 750px;
+        }
+
+        .explist ul {
+            /* padding: 10px 50px; */
+        }
+
+        .explist li {
+            margin: 2px 120px;
+            padding: 10px 10px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .contact {
+            background-color: black;
+            display: block;
+            height: 600px;
+        }
+
+        .abtl1 {
+            font-family: March;
+            font-size: 45px;
+            color: rgb(10, 232, 240);
+            text-align: center;
+            text-shadow: 2px 2px rgb(39, 4, 240);
+            margin: 1px;
+            padding: 1px;
+        }
+
+        .fdbk img {
+            height: 170px;
+            width: 210px;
+            position: absolute;
+            align: center;
+            margin: 70px 1170px;
+            padding: 2px 2px;
+            /* border-radius: 20%; */
+            /* box-shadow: 0.1em 0.1em white; */
+            display: inline-block;
+        }
+
+        .edu {
+            display: block;
+            height: 1100px;
+            background-image: url('pencils.jpg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .abtl2 {
+            font-family: March;
+            font-size: 45px;
+            color: rgb(240, 10, 10);
+            text-align: center;
+            text-shadow: 2px 2px rgb(16, 17, 17);
+            margin: 1px;
+            padding: 1px;
+        }
+
+        .schclg {
+            padding: 10px 50px;
+        }
+
+        .schclg li {
+            margin: 2px 120px;
+            padding: 10px 10px;
+            font-size: 20px;
+            color: rgb(12, 11, 11);
+        }
+
+        .srclg li {
+            /* color: red; */
+            font-weight: bold;
+        }
+
+        .jrclg li {
+            /* color: red; */
+            font-weight: bold;
+
+        }
+
+        .sch li {
+            /* color: red; */
+            font-weight: bold;
+        }
+
+        .red1 {
+            color: red;
+            font-size: 25px;
+        }
+
+        .red2 {
+            color: red;
+            font-size: 25px;
+
+        }
+
+        .red3 {
+            color: red;
+            font-size: 25px;
+
+        }
+
+        .Skills {
+            display: block;
+            height: 1200px;
+            position: relative;
+            background-image: url('bk1.jpg');
+            background-repeat: no-repeat 0 0;
+            background-size: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0.9;
+            /* filter: alpha; */
+            /* z-index: -1; */
+            content: '';
+            /* background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url('bk1.jpg'); */
+            /* background-color: hsla(0,0%,100%,0.60); */
+            /* background-blend-mode: overlay; */
+        }
+
+        .abtl3 {
+            font-family: March;
+            font-size: 45px;
+            color: rgb(225, 240, 13);
+            text-align: center;
+            text-shadow: 2px 2px rgb(8, 8, 8);
+            margin: 1px;
+            padding: 1px;
+            /* position: absolute; */
+        }
+
+        .certi {
+            display: block;
+            height: 350px;
+            background-image: url('bk5.jpg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .line {
+            display: inline;
+            font-family: cursive;
+            font-size: 30px;
+            text-align: center;
+            color: red;
+            padding: 0px 0px;
+            position: static;
+            z-index: 2;
+            /* margin-top: 0px 0px; */
+            margin-bottom: 25px;
+        }
+
+        .line:hover {
+            font-family: cursive;
+            font-size: 30px;
+            text-align: center;
+            color: rgb(47, 0, 255);
+            text-decoration: underline;
+        }
+
+        .abtl4 {
+            font-family: March;
+            font-size: 45px;
+            color: rgb(10, 240, 29);
+            text-align: center;
+            text-shadow: 2px 2px rgb(16, 17, 17);
+            margin: 1px;
+            padding: 10px;
+            /* display: inline; */
+        }
+
+        .logo {
+            display: inline-block;
+            margin: 2px 100px;
+            padding: 2px 20px;
+            display: flex;
+            /* position: absolute; */
+        }
+
+        .logoa {
+            display: inline-block;
+            margin: 2px 100px;
+            padding: 2px 20px;
+            display: flex;
+        }
+
+        .logob {
+            display: inline-block;
+            margin: 2px 100px;
+            padding: 0px 20px;
+            display: flex;
+        }
+
+        .logoc {
+            display: inline-block;
+            margin: 2px 100px;
+            padding: 0px 20px;
+            display: flex;
+        }
+
+        .logo1 img {
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+            padding: 30px 70px;
+        }
+
+        .logo2 img {
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+            padding: 30px 70px;
+        }
+
+        .logo3 img {
+            display: inline-block;
+            height: 200px;
+            width: 450px;
+            padding: 30px 70px;
+        }
+
+        .logo4 img {
+            display: inline-block;
+            height: 150px;
+            width: 250px;
+            padding: 30px 50px;
+        }
+
+        .logo5 img {
+            display: inline-block;
+            height: 150px;
+            width: 400px;
+            padding: 30px 50px;
+        }
+
+        .logo6 img {
+            display: inline-block;
+            height: 150px;
+            width: 350px;
+            padding: 30px 50px;
+        }
+
+        .logo7 img {
+            display: inline-block;
+            height: 180px;
+            width: 400px;
+            padding: 30px 20px;
+        }
+
+        .logo8 img {
+            display: inline-block;
+            height: 150px;
+            width: 400px;
+            padding: 30px 20px;
+        }
+
+        .logo9 img {
+            display: inline-block;
+            height: 130px;
+            width: 400px;
+            padding: 30px 30px;
+        }
+
+        .logo10 img {
+            display: inline-block;
+            height: 100px;
+            width: 500px;
+            padding: 30px 40px;
+        }
+
+        .logo11 img {
+            display: inline-block;
+            height: 200px;
+            width: 290px;
+            padding: 0px 50px;
+        }
+
+        .logo12 img {
+            display: inline-block;
+            height: 210px;
+            width: 210px;
+            padding: 0px 80px;
+        }
+
+        .clk {
+            column-count: 4;
+            height: 70px;
+            background-color: black;
+        }
+
+        .col1{
+            text-align: center;
+            background-color: yellow;
+            color: rgb(6, 6, 54);
+            height: 70px;
+            /* padding: 1px 1px ; */
+            align-content: center;
+            vertical-align: middle;
+            justify-content: center;
+            /* margin-top: 5px; */
+        }
+
+        .col2{
+            /* display: block; */
+            text-align: center;
+            background-color: pink;
+            /* background-size: 100%; */
+            color: rgb(6, 6, 54);
+            height: 70px;
+            /* padding: 1px 1px ; */
+            align-content: center;
+            vertical-align: middle;
+            justify-content: center;
+
+        }
+
+        .col3{
+            text-align: center;
+            background-color: yellow;
+            color: rgb(6, 6, 54);
+            height: 70px;
+            /* padding: 2px 2px ; */
+            align-content: center;
+            vertical-align: middle;
+            justify-content: center;
+
+        }
+
+        .col4{
+            text-align: center;
+            background-color: pink;
+            color: rgb(6, 6, 54);
+            height: 70px;
+            /* padding: 2px 2px ; */
+            align-content: center;
+            vertical-align: middle;
+            justify-content: center;
+
+        }
+        
+        .col1:hover{
+            text-align: center;
+            background-color: yellow;
+            color: rgb(245, 33, 33);
+            height: 70px;
+            /* padding: 1px 1px ; */
+            align-content: center;
+            vertical-align: middle;
+            justify-content: center;
+            /* margin-top: 5px; */
+        }
+
+        .col2:hover{
+            /* display: block; */
+            text-align: center;
+            background-color: pink;
+            /* background-size: 100%; */
+            color: rgb(245, 33, 33);
+
+            height: 70px;
+            /* padding: 1px 1px ; */
+            align-content: center;
+            vertical-align: middle;
+            justify-content: center;
+
+        }
+
+        .col3:hover{
+            text-align: center;
+            background-color: yellow;
+            color: rgb(245, 33, 33);
+
+            height: 70px;
+            /* padding: 2px 2px ; */
+            align-content: center;
+            vertical-align: middle;
+            justify-content: center;
+
+        }
+
+        .col4:hover{
+            text-align: center;
+            background-color: pink;
+            color: rgb(245, 33, 33);
+
+            height: 70px;
+            /* padding: 2px 2px ; */
+            align-content: center;
+            vertical-align: middle;
+            justify-content: center;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <table id="header" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="yellow">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
+                    <tr>
+                        <td>
+
+
+                        </td>
+
+                        <td id="pf">
+                            <font face="Algerian" size="10" color="yellow">
+                                <b>Portfolio</b>
+                            </font>
+                        </td>
+
+                        <td width="15%">
+
+                        </td>
+
+                        <td id="nav">
+                            <a href="#About" style="text-decoration: none">
+                                <font face="Cursive" color=aqua size="5">
+                                    <b>About</b>
+                                </font>
+                            </a>
+                        </td>
+
+                        <td>
+
+                        </td>
+
+                        <td id="nav">
+                            <a href="#Projects" style="text-decoration: none">
+                                <font face="Cursive" color=aqua size="5">
+                                    <b>Projects</b>
+                                </font>
+                            </a>
+                        </td>
+
+                        <td>
+
+                        </td>
+
+                        <td id="nav">
+                            <a href="#Experience" style="text-decoration: none">
+                                <font face="Cursive" color=aqua size="5">
+                                    <b>Experience</b>
+                                </font>
+                            </a>
+                        </td>
+
+                        <td>
+
+                        </td>
+
+                        <td id="nav">
+                            <a href="#Education" style="text-decoration: none">
+                                <font face="Cursive" color=aqua size="5">
+                                    <b>Education</b>
+                                </font>
+                            </a>
+                        </td>
+
+                        <td>
+
+                        </td>
+
+                        <td id="nav">
+                            <a href="#Skills" style="text-decoration: none">
+                                <font face="Cursive" color=aqua size="5">
+                                    <b>Skills</b>
+                                </font>
+                            </a>
+                        </td>
+
+                        <td>
+
+                        </td>
+
+                        <td id="nav">
+                            <a href="#Certification" style="text-decoration: none">
+                                <font face="Cursive" color=aqua size="5">
+                                    <b>Certification</b>
+                                </font>
+                            </a>
+                        </td>
+
+                        <td>
+
+                        </td>
+
+                        <td id="nav">
+                            <a href="#contact" style="text-decoration: none">
+                                <font face="Cursive" color=aqua size="5">
+                                    <b>Contact</b>
+                                </font>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table id="home" width="100%" cellpadding="20" cellspacing="0">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
+                    <tr>
+                        <td align="center" valign="middle">
+                            <h3>
+                                <font face="Times New Roman" size="10" color="#ff0099">
+                                    Hi, I am Alisha !
+                                </font>
+                            </h3>
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <div class="about">
+
+        <div class="abtttl">
+            <h2>About Me</h2>
+        </div>
+
+        <div class="alu">
+            <img src="asd pic.jpeg">
+        </div>
+
+        <div class="abtinfo">
+            <p>
+                ★ Ever since my childhood I have been independent and creative, and this has led me
+                to
+                seek
+                <br>
+                &nbsp; &nbsp;
+                new experiences and pursue my goals & interest with passion.
+                <br>
+                ★ The human brain is a crazy place and there are two things that fascinate me the
+                most
+                ….
+                <br>&nbsp; &nbsp;
+                ☆ First: The concept of <b>𝐀𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐈𝐧𝐭𝐞𝐥𝐥𝐞𝐠𝐞𝐧𝐜𝐞</b>!
+                <br>&nbsp; &nbsp;
+                ☆ Second: The challenge to train machines using <b>𝐌𝐚𝐜𝐡𝐢𝐧𝐞
+                    𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠</b>.
+                <br>
+                ★ Communication is my bread and butter. I have an excellent verbal and written
+                <br>&nbsp; &nbsp; communication skills in
+                English. I began polishing this skill when I was a teenager <br>&nbsp; &nbsp; by competing in public
+                speaking competitions
+                and debates.
+                <br>
+                ★ I have demonstrated ability to learn new technical skills and domains.
+                <br>
+                ★ I have an ability to work as a team member, and to collaborate with others to help
+                <br>&nbsp; &nbsp; resolve challenges.
+                <br>
+                ★ Along with it, I also have some basic skills regarding web development.
+                <br>
+                ★ I am learning more and would like to grab an internship opportunity in Machine
+                Learning soon.
+                <br>
+                ★ When I’m not programming, I'm usually either reading books or watching movies,
+                football matches, scrolling LinkedIn, <br>&nbsp; &nbsp; learning new things and travel to the core of
+                eternity.
+                <br>
+                ★ I thrive with a goal of <b>Be Fierce, Be Fearless and Be flawed!</b> That’s the
+                best
+                way to live life!
+                <br>
+            </p>
+        </div>
+
+    </div>
+
+    <div class="Proj">
+
+        <div class="abttl">
+            <h2>Projects</h2>
+        </div>
+
+        <div class="stone">
+            <img src="rps1.jpg" alt="stone paper Scissor">
+        </div>
+
+        <div class="snake">
+            <img src="snk.png" alt="Snake Game">
+        </div>
+
+        <div class="avengers">
+            <img src="cas.png" alt="Captain America Shield">
+        </div>
+
+        <div class="tac">
+            <img src="ttt.png" alt="Tic Tac Toe">
+        </div>
+
+        <div class="projlist">
+            <div class="projlist1">
+                <ul class="footli" type="none">
+                    <li>
+                        Snake Game
+                        <a href="#" style="text-decoration:none">
+                        </a>
+                    </li>
+
+                    <li>
+                        Music Player
+                        <a href="#" style="text-decoration:none">
+                        </a>
+                    </li>
+
+                    <li>
+                        BMI Calculator
+                        <a href="#" style="text-decoration:none">
+
+                        </a>
+                    </li>
+
+                    <li>
+                        YouTube Clone
+                        <a href="#" style="text-decoration:none" color="#c2c0c3">
+
+                        </a>
+                    </li>
+
+                    <li>
+                        Calculator
+                        <a href="#" style="text-decoration:none" color="#c2c0c3">
+
+                        </a>
+                    </li>
+
+                    <li>
+                        Calendar
+                        <a href="#" style="text-decoration:none">
+
+                        </a>
+                    </li>
+
+                    <li>
+                        ChatBot
+                        <a href="#" style="text-decoration:none">
+
+                        </a>
+                    </li>
+
+                    <li>
+                        Contact Saver
+                        <a href="#" style="text-decoration:none">
+
+                        </a>
+                    </li>
+
+                    <li>
+                        Daily Quiz
+                        <a href="#" style="text-decoration:none">
+
+                        </a>
+                    </li>
+
+                    <li>
+                        Emplyoyee Record System
+                        <a href="#" style="text-decoration:none">
+
+                        </a>
+                    </li>
+
+                    <li>
+                        Guess the Number-Game
+                        <a href="#" style="text-decoration:none">
+
+                        </a>
+                    </li>
+
+                    <li>
+                        Random Password Generator
+                        <a href="#" style="text-decoration:none">
+
+                        </a>
+                    </li>
+
+                    <li>
+                        Stone Paper Scissor
+                        <a href="#" style="text-decoration:none">
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="projlist2">
+                <ul class="footli" type="none">
+                    <li>
+                        Tic Tac Toe
+                        <a href="#" style="text-decoration:none">
+
+                        </a>
+                    </li>
+
+                    <li>
+                        ToDo App
+                        <a href="#" style="text-decoration:none">
+                        </a>
+                    </li>
+
+                    <li>
+                        Travel Management System
+                        <a href="#" style="text-decoration:none">
+                        </a>
+                    </li>
+
+                    <li>
+                        Bus Reservation System
+                        <a href="#" style="text-decoration:none">
+                        </a>
+                    </li>
+
+                    <li>
+                        Digital Consultation System
+                        <a href="#" style="text-decoration:none">
+                        </a>
+                    </li>
+
+                    <li>
+                        Gym Website
+                        <a href="#" style="text-decoration:none">
+                        </a>
+                    </li>
+
+                    <li>
+                        Restaurant online food delivery System
+                        <a href="#" style="text-decoration:none">
+                        </a>
+                    </li>
+
+                    <li>
+                        Junnar Tourism Website
+                        <a href="#" style="text-decoration:none">
+                        </a>
+                    </li>
+
+                    <li>
+                        Portfolio Website
+                        <a href="#" style="text-decoration:none">
+                        </a>
+                    </li>
+
+                    <li>
+                        Online Temperature Converter
+                        <a href="#" style="text-decoration:none">
+                        </a>
+                    </li>
+
+                    <li>
+                        Captain America Shield
+                        <a href="#" style="text-decoration:none">
+                        </a>
+                    </li>
+
+                    <li>
+                        Travel Management System
+                        <a href="#" style="text-decoration:none">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="exp">
+        <div class="abtl">
+            <h2>Experience</h2>
+        </div>
+        <div class="explist">
+            <ul>
+                <li color="red">
+                    <b>Intern at Oasis Infobyte.</b>
+                    <ul>
+                        <li color="blue">
+                            February, 2022 - Present.
+                        </li>
+                        <li color="blue">
+                            Web Development and Design tasks.
+                        </li>
+                    </ul>
+                </li>
+
+                <li color="red">
+
+                    <b>Intern at CollegeRanker India.</b>
+                    <ul>
+                        <li color="blue">
+                            February, 2022 - Present.
+                        </li>
+                        <li color="blue">
+                            Machine Learning Tasks.
+                        </li>
+                    </ul>
+                </li>
+
+                <li color="red">
+
+                    <b>Artificial Intelligence & Machine Learning Trainee at Tech Saksham <br>by Microsoft, SAP & Edunet
+                        Foundation.</b>
+                    <ul>
+                        <li color="blue">
+                            August, 2021 - Present.
+                        </li>
+                        <li color="blue">
+                            Artificial Intelligence & Machine Learning Training <br>along with Capstone Projects.
+                        </li>
+
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="edu">
+        <div class="abtl2">
+            <h2>Education</h2>
+        </div>
+        <hr color="black" width="50%">
+
+        <div class="edulist">
+            <ul class="schclg">
+                <li>
+                    <b class="red1">Government College of Engineering and Research, Avasari Khurd, Pune</b>
+                    <ul class="srclg">
+                        <li>
+                            Bachelor of Engineering - BE, Computer Engineering
+                        </li>
+                        <li>
+                            Aug 2019 - Jun 2023
+                        </li>
+                        <li>
+                            Grade: 9.43 SGPA
+                        </li>
+                        <li>
+                            Activities and societies: Magazine editor at Zenith 2020,
+                            Cultural Secretary at Zenith 2021-22,
+
+                            Class Representative of Computer Branch
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+
+                    <b class="red2">Guruvarya R. P. Sabnis Vidyamandir and Junior College, Narayangaon</b>
+                    <ul class="jrclg">
+                        <li>
+                            Higher Secondary Education (Science stream)
+                        </li>
+                        <li>
+                            Jun 2017 - Apr 2019
+                        </li>
+                        <li>
+                            CET score : 95.61 percentile (PCM)
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+
+                    <b class="red3">Kukadi Valley Public School, Yedgaon, Narayangaon</b>
+                    <ul class="sch">
+                        <li>
+                            CBSE Board, Regular School
+                        </li>
+                        <li>
+                            Jun 2006 - Apr 2017
+                        </li>
+                        <li>
+                            Grade: 90.80%
+                        </li>
+                        <li>
+                            Activities and societies: Gold Medal in G. K. Olympiad by Knowledge Hours, <br> Debate
+                            competitions, Chess competition, Singing competitions, Lezim, <br> Dance competitions,
+                            Marching Band, Drama competition, Abacus, Swimming, <br> Ranked first in 2 Bhagvadgeeta
+                            Competitions held by ISCON. <br>
+                            I studied here upto my 10th standard. <br>
+                            I always ranked full marks in Computer Subject & above 90 in all subjects.
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="Skills">
+
+        <div class="abtl3">
+            <h2>Skills</h2>
+        </div>
+
+        <div class="logo">
+
+            <div class="logo1">
+                <img src="html.jpg" alt="HTML">
+            </div>
+
+            <div class="logo2">
+                <img src="css.jpg" alt="CSS">
+            </div>
+
+            <div class="logo3">
+                <img src="py.jpg" alt="PYTHON">
+            </div>
+        </div>
+
+        <div class="logoa">
+            <div class="logo4">
+                <img src="sql.jpg" alt="SQL">
+            </div>
+
+            <div class="logo5">
+                <img src="pandas.jpg" alt="PANDAS">
+            </div>
+
+            <div class="logo6">
+                <img src="numpy.png" alt="NUMPY">
+            </div>
+        </div>
+
+        <div class="logob">
+            <div class="logo7">
+                <img src="matplotlib.jpeg" alt="MATPLOTLIB">
+            </div>
+
+            <div class="logo8">
+                <img src="seaborn.png" alt="SEABORN">
+            </div>
+
+            <div class="logo9">
+                <img src="keras.jpg" alt="KERAS">
+            </div>
+        </div>
+
+        <div class="logoc">
+            <div class="logo10">
+                <img src="tensorflow.png" alt="TENSORFLOW">
+            </div>
+
+            <div class="logo11">
+                <img src="scikit.png" alt="SCI-KIT LEARN">
+            </div>
+
+            <div class="logo12">
+                <img src="vscode.jpg" alt="VS CODE">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="certi">
+
+        <div class="abtl4">
+            <h2>Certification</h2>
+        </div>
+
+        <div class="line">
+            <p>Click here to view all my Certifications</p>
+        </div>
+
+    </div>
+
+    <div class="contact">
+        <div class="abtl1">
+            <h2>Contact</h2>
+        </div>
+        <div class="fdbk">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBIRERESEhEYGBIaGRIYGBkYGBgYGBoSGBkaHBgUGBgcIS4lHB4rIRkYJjgmKy8xNTU1HCQ7QDs0Py40NTEBDAwMEA8QGBESGjQhISE0NDE0MTQ0NDQ0MTQ0NDY0NDQ0NDQxNDQ0NDQ0NDE0PzQ0NDQxMTQ0NDQ0NDQ0NDQxMf/AABEIAL0BCwMBIgACEQEDEQH/xAAcAAEBAAIDAQEAAAAAAAAAAAAAAQYHAgUIBAP/xABLEAABAwICBgcDCAUICwAAAAABAAIDBBES8AUGITFBUQcTYXGBkaEiUrEUMmJykqLB4UKCssLRFSMkMzVTc6MWJUNEY2SEk7PD8f/EABgBAQEBAQEAAAAAAAAAAAAAAAABAgME/8QAIBEBAQACAgICAwAAAAAAAAAAAAECERIxIUFRcSIygf/aAAwDAQACEQMRAD8A1ouK5LiuboKKqICIiAiIoCiqhQFFUQRERAUVRBEREQUVRURERAREQcUREBFEQEREBERAREQfUuKIiiIiCIiKAiIgIiICiqhKAoqiCIqogKKogiKqIgiIgiIioLiqVEBRVRAREQERQoCIiD6URFFFFVEBFUQRFVFAREQFt3op0JDJo+aSeGOQSSuDQ9jXjAxrWjY4e+XrUS9FalUXyfRtHGRZ3Vse4cRJJeR483lbx7ZyfHW9Hui5f91DDzje+P7rTh4clj1Z0R07rmGrlYeAe1kgHZ7IYfVbJz+Cq3ZE3Wl63oorWf1U0Eg7S+N32S0j7yx6t1K0pDcvopCBxZhl9Iy4+i9EXznvKoOc+CnGLuvLVRE6N2GRjmO917Sx32XWK/NeppWNeML2hzeTgCPIroq3UrRk18dDECdpMYMTr773jwqcDbzsot21PRRo97rsfUMHFrXscPN7HH1X0U3RfotlsTJXn6czh/48KcacmilMQ3X2r0XTalaLjAw0ERt77TIfEvJuup6R9Ews0RVdVAxhYYXjq2MZsbKzEfZt+iXKcTbRaiAg7iiyouK5IqOKiqIIiIgKIiAiIg+lERRRERBEL2je4DvK3dqRq5o+bR9JM6jhfI5gxuewPxPa4teTiuN4O5ZbS0EMQAihjYBuDGMYBs+iFvjtnk830+jqiXbHTyvH0Inu/ZaV2tNqXpOUAtoJdvv4Y/MSOaQvQ1+34qZ/BOENtHU/RjpN49pkMfY+XaPsNcu1p+iOoNusrIm/UY+T4li24M/FW2dvarxicq1tT9EVPa0tZM7gcDWRg8Nzg63mtkAADZsHAbN1tyueCozv7VqSREAzt5pYZtyTPouSogz5pbPgmfREBLZ2pnihzuUDPDkmePNfPU18MTmNlmYxz3BjA97Wl772wsBtiO0bBzC+i2fDtQQqP3Hlt/jyXLPBS19n8e5UdVXat0NRtlo4Xu94xsD/ALYGLisdrei/Rj74GSxHmyVzuPKXEs2abgZzuVznzU1F286676vx6NqhTxyue3q2PJeAHAvc8YfZ2HY0G+zesfWTdJFV1mlqw3uGujYOzAxjXD7WPzWMrne2o4lERRURFEQREQERFR9KiIsqIiIN49FE4fouNvGOSdndd3WfvrNBnz/Na16Fqi8NZFxbJG+3Y9mH/wBa2Tn07e5dcemL2Z9O0qhBnz/NM8eX5LSLbO3tTPDsUzw5/mqgueKZzdM580CAM+vJEzxXUV2sVNDVwUchf18oBYGsLhYuc0YiN3zXG+4BpJskmx2+eCuePJL58kzm6gFEGd3JdXXax0UDzHNVxMkFrtc8Atvuxe7v4qybGLa0RCTT2h2kXAbI8A7QHND3g+bG+QWeZ4c1g2sP9v6GPDBUcvclX2x6XnrdJGnpX4KSmN6l7QCZJuFO1xGxoIOIjb7Lhs2E6s3J9IyzPFM5uqRnxUzwzwWFcW7vMeS5Dac8/wAlG7z3/Havh05VdRSVU3FkMzx3sYSBt7UHm3S1V11TUyg3D5Zng9j3ucPQhfIVGiwA5ALkuTosUTnuaxgu5xAA2bSdw2rg4W3r79GDDjlNwGNdY2/2hs1tjzBc13cF8Dzdxz3oIoqoiCIiAiIqPoREWVEREVsPobqMNZUxe/Bi8Y3tFv8AMPktxZ4c/wA1oboyqur0rTDhIJmHxY5w9WNW+c8c8F0x6Yy7M8c8Fc8M8V1+m9LxUUD6icnA3CPZGJxc42a1oJ3kkb7Ba9/030npF5i0bSYG7i8gOc0bPac5wwMPHCQ48rrpJay2g5wAuSAN2022rnZYBRdHXXESaVqpKqQ7cAe8RtJtcBxIcf1cA7FnrAAABuAAHdb8lLJ6oueGeCuePNM8c8UIz4KDAukevmZU6Jp4ZXsEk3tYHOYXHHE1ocQdo9t2w7FzkaH60MJ/QpMTeza4bPCR3mvz12jD9MaDadwe93i18bx6tC+DWPS/yLTks+HG8UbWRs2kvme4CNgtt2u9LrrJ4n1UbOtnzWLaW17oqWodTv6x72gl7o2B7I7AEh5xXuOOEG3G21Ynpaev0PPR1dRVyTOmEnyiIu/mmuAacEbb4QBi2EAbWcnEL8NVqbBoXS9bKbzTMqI8Z3kOZhv2F0j3X52HJSYzs2zjRGuMVXR1dWyN7GQCQuDw25wMx7MJI3ELWNHoR82iKqtMTpap9S2zmsL39WDd72gXIxPe+9vdHJdnomrbT6uVVhd9RM+FreLnyNYwgcScDXHwWV9FdSz+Sm+00dW+fGbgBt3l93HgML2m/JX9ZbPk7YprX8qpv5BawO+VspSwADE4SlkbLADe4YnW7Qu86I9KRGnfR4QyoY973A3xSNcbFxvtxM2MI4AN5rrJZait0zQ10cLzSGUxQvDXFphi+fM6ws1rnPeQTa4aeSyvTuolLVVAqQ+WCa93Pgc1hefeNwbOsSMQtfjdLZrVVy1Yqn1FbpafGTAJIqeIX9nFAw9a5o3bXP3hZRnPmvk0Vo2KkhjggZhjYLNF7naSS5x3kkkkntX15454LnbNjiN57hz37li/SXU9VomrtveI4x3Pka133cSyg7/Plw2rXnTRU4aKmjB+fOCe1rGPuPtOapelnbTKIuUELpHsjb857msH1nEAH1XJtnmjwKTQuMgYpMcpHO+xg8WhnmtfNGxZ30g1LWRw0zNjRhaB9Bg3eBwrBFrL4SfIoqosgiIgIiKj6EQIsqIiJVdpqzUmKvonjhPBf6rnta77pK9InOT3ry1jLPab85vtD6w2j1XqKKQPa143OAcN25wuFvBnJiHSt/Zb/wDEg5e+F+3Rf/ZFN9ap5/38n8Vx6VG/6qmPJ9Pz/vWj8V0eo2tNHRaKjbUTtEgfPaNoxyG7y4HANoG3ebDtXeTeP9c/bY1TURxMdJI9rI2i7nOLWtaOZJOxfPozTNLVFwp6iOUttiDHhxaCdhIHitW6462jSkNPTwwyxRSVDBjeG4X4fZwjCSDhc9jiLm1gu80FoZlJpusZSgiFlG0lty7DI8x4QSTck4HO28ypx1PJt1mktedJv+WVNKyIUcEjWXc3ETd+FhJLrnEcJNrWDm96ybXnWV9Po6OSnuJ6jq2x2sXND243OHbYho7XNKwXUuknrNFz6Pihd1ctRC59RiaGRsaIXPBaTic+0bLADbi4WXda8VUbtLaIpAbMhfTYhvAMkseFh7cMbfBwWtTetdDjpHRz6TSeg2S1Ms0hPtvle5/845zWkNxG7WlxsBc7gvu0rRtl1opA+xa2FktjY3cwSlg7w4Nd4L5dd6WpqtJF9IwSPom0jnMB9rrHyPkAFztNmsNt9r9y+6g1Tq6qpGk55nUtWXucyINbKI4wwMY1xJsbtD8Q44/0TdN+O/Q+XpUjfU1WjqOKzpHCd+Hjc4Q091mP8l1Grkrq6ipdERMfcTvfWOLSGsgbKXhhJtZzjYW33bbtGwtD6sdVUvrKid1RWObgD3MDGMj9yNgJDdhte5483XyAZ3clOXjU9GmGaL1BZBVNmNS59OyR80NPhAYyV2zETiIdhs21mg+yO2/aHUzR5e9/yf55xPYHyiJzhtBdCHYDtvsIt2LIL58kz8Vi232qNYGgBoAaAAAAAABsAA4BM8Ezm3crnjzQTPHsTv8AwUVz8OxBxPDy8x+S1D02VV6ijiv8yOV5H+I8NB/yytvP4dhH8FobpWqus0tM0bo2QR/cxn1kI8FnLpqdsPWQaj0uOsa8j2Y2veeV7YWjzdf9VY+s01PYIaOpqHbC9wYD9Bg3j9Zzh+qs4zyuXTotbavrat+3Y0BvidpPqB4LpVykkL3Oed7i5x8Tey4qW7pBREUURERBERUfQiIsqIoiClejdUZzJo6geTcmngufpBgad3aCvOK310ZT49E0lztb1zOG5sr8P3bLWHaZOXSYzFoir2bQac+U8RJ8rrFOi/VmjqqeSpqIeskbM+MNeSWBoYx18G5x9v8ASus414jxaMrxyhkd9gF37qxjoZfekq28BPi8XRsFvujzXol/Guft+fTBShsFDJh/m45HsLWiwDXta4NHBuyMgd4XZ1UtPQ0uCge6WsrcIhe95llke5uFs73m5wMbtvuFu0rLNIUEVTE+GaMPieAHNPGx2EEbQQQCCCCDuXxaE1ao6EuNLTtY518T7ve4jYbYnEut2XspvxpWH6B1d0roqWeGkbDNTyBpa+R5Y1jwPZc5rfavbYQAQbN2jcu7dqPDJSuiqJXvqHyGd9Q0hr/lBGHE0G4DALNDNwAG47VlmfiqCpcqadTq7oJlDE5jHve57i+SSR2KR8hA9pzrcgB+ZJPb59e9RM8FLdhnhngrnjzTPFTPooLZM/BTPDPFM8eSC54qHO7khQKi3z4qZ4qZ48kzw5oI/O7mCvNetdT12kK6TnPMB9Vri1v3Whek3khpttNjs8N2xeVQ8u9pxu47SeZO0lYyag42BKzXWD+i6Ohp9gdga1w/4j/ak+L1hjDY35bfEbR6r6dIaWmqcPXPxEX22A387C2zcpLrZXxhCiiy0IURAREVQREQfsiIsqIoiCrdnQ/Pi0a9nuTyt+0xjv3ytJLcHQtJ/RKtvKdp+1GwfureHaZdNjvbcEEXBuCCLgg8LHvXCngZG0MjY1jBuaxrWtGzg1osFzGfJUZ38yujJnjz/NXPBcc8OQXIZ8+xELpn07e5M+iZ4IGeCuePapn0TPw5oGc7Vc8O1QZ3dqt87exAzxQ580znapdBRnyTPFM8eals+HegWzsQHPgmeHYmePagrTtH5815ar4ermmjAsGSSM8GPc38F6jz8Oa82a3w9XpKvZ/zE58HvLh6OWMmo6fgVxAXJRYaFERARERBERWAiIg/VEUUVUURBbra/QlJ7Fezk6md9oPH7i1Otp9CO/SP/RfGoVx7S9Nq548kzw5qZ4dqt8+XYurJn49iufgmfipw/wDnJEcs8FL529iZ480RVzm6meHJM8OxXPHtRDPFDn1UO7bnZ2rg6dg3vaO9zQiv0vy/DsTPHtX4/KmcHX7g537IV+UDg15/UcP2rdqGn6oM7ua/ESuO6N3iWAbvrEoZJPcb4vI5cA1EfrnjyVOfNfjaT6A8HO494UwPO94H1WD8SeSK/bPDl+S89dJEeDS9aObonfahjd+KyrpH1urqSu+T01U5rGxxlwDIiesfiJNyy49ksWuNI6QmqZHSzyOfIQ0FzrXIaLAbABsC55VZHyqIiy0IiICIiqCKIgIiIP1REUUREQFszofroKdte+eeOMONIAZHsYDh63cXkX+ctZrjZWXSV6Km100ZH86vhP1H4+fBgN110nSXopu6d7vqwy9nvNC0MivJOL0LR69aNmtgqo2k8JXNhO/k+xXeQ1DntxMEbm+82TEN30W/ivLy508ro3Yo3uY73muLXebbFORp6iIk95g/VceXNwTq3+/5Mb+N156otddKQWDa6QgcHlsvheQONvFZBQ9LFcy3WwwSDsa+Nx/WDiPuq8oarcohJ3vefED9kBDTt44j9Z7z8T3LXVF0vU7rCeklYeOBzJB3+1hPosgoukPRUpA+VBjuUjHxjfxeRh9VrcTyyYUsf9237I7l+jWgbgPRfNRaQgnGKGeOQfQex4+6e1fURn04qhfPrxTObJn17FL59URUz+KXz4KZ/Dgigzkd6HPoOKufXt7lMQG07BvPYNpRHnXX6q63Stc8HYJCz/tNbGfVhWOr9quoM0skp3vfI8973F1vVfiuVbgiIooiIqgiKICIogqKKoOaIiiiIiAiiIKoiICIiAiIgIoiC2F7228+K7eh1nr4P6utnaORkc9v2HXb6Lp0VRnFF0o6TjsHuhlA9+Oxt3xlo9FkNF0wDdPQkD3opA77jmj9pamROVXUb4ouk7RclsckkRPCSJx3n3o8Qt4rIqHWCiqNkNXC87PZbIwu+wTdeZVCAd4WuTPF6tsRk8vzXVa0VRhoK2QHa2Cct+tgIb6rznR6WqaYDqKmWMb7RyPaL9wNvRdpWa6aRnp5KaapL4ngBwcxmKzSH7HhodvHElORpj4FhZVEWGhERVBEUQERRBVERAREQf/Z"
+                alt="feedback logo">
+        </div>
+        <tr>
+            <td align="center" valign="top">
+                <table border="0" width="50%" cellpadding="15" cellspacing="0" align="center" bgcolor="black">
+                    <tr>
+                        <td width="30%">
+
+                            <font face="Verdana" size="4" color="#ffffff">
+                                Name:
+                            </font>
+                        </td>
+                        <td width="70%">
+                            <font face="Verdana" size="4" color="#ffffff">
+                                <input type="text" size="40">
+                            </font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="30%">
+                            <font face="Verdana" size="4" color="#ffffff">
+                                Email ID:
+                            </font>
+                        </td>
+                        <td width="70%">
+                            <font face="Verdana" size="4" color="#ffffff">
+                                <input type="email" size="40">
+                            </font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="30%">
+                            <font face="Verdana" size="4" color="#ffffff">
+                                Mobile Number:
+                            </font>
+                        </td>
+                        <td width="70%">
+                            <font face="Verdana" size="4" color="#ffffff">
+                                <input type="number" size="12">
+                            </font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="30%">
+                            <font face="Verdana" size="4" color="#ffffff">
+                                Message:
+                            </font>
+                        </td>
+                        <td width="70%">
+                            <font face="Verdana" size="4" color="#ffffff">
+                                <textarea rows="5" cols="37">
+											</textarea>
+                            </font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="30%">
+
+                        </td>
+                        <td width="70%">
+                            <button type="Submit">
+                                <font face="Verdana" size="4" color="black">
+                                    <b>Submit</b>
+                                </font>
+                            </button>
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+    </div>
+
+    <div class="clk">
+
+        <div class="col1">
+            <b>LinkedIn</b><br> 
+            <a href="www.linkedin.com/in/alisha-dhavale-6a5262205" style="text-decoration:none">
+                <b>www.linkedin.com/in/alisha-dhavale-6a5262205 </b>
+            </a>
+        </div>
+
+        <div class="col2"> <br>
+            <b>GitHub</b><br> 
+            <a href="https://github.com/Alisha-25" style="text-decoration:none">
+                <b>https://github.com/Alisha-25 </b>
+            </a>
+        </div>
+
+        <div class="col3"><br>
+            <b>HackerRank</b><br> 
+            <a href="https://www.hackerrank.com/alishadhavale" style="text-decoration:none">
+                <b>https://www.hackerrank.com/alishadhavale </b>
+            </a>
+        </div>
+
+        <div class="col4"> <br>
+            <b>Email</b> <br> 
+            <a href="mailto:alishadhavale@gmail.com" style="text-decoration:none">
+                <b>alishadhavale@gmail.com </b>
+            </a>
+        </div>
+
+    </div>
+
+    <table id="footer" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="black">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
+                    <tr>
+                        <td width="80%" valign="top">
+                            <font face="Verdana" color="yellow" size="4" align="center">
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp;
+                                Please contact me at above links to find out how I might contribute and add value to
+                                your
+                                organization.
+                            </font>
+                        </td>
+
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
